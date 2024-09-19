@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0b6bb65a-ed10-4646-8d87-8b92885813a9)# COLOR_CONVERSIONS_OF-IMAGE
+# COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 To write a python program using OpenCV to do the following image manipulations.
 
