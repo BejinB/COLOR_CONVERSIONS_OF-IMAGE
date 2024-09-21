@@ -61,12 +61,9 @@ cv2.destroyAllWindows()
 #### Line
 ```
 
-start = (0, 0)
-end = (int(width * 2), int(height * 2))  
-
-color = (255, 0, 0)
-thickness = 5 
-diagonal = cv2.line(image, start, end, color, thickness)
+image=cv2.imread("image2.jpg")
+diagonal = cv2.line(image,  (0, 0),(int(width * 2), int(height * 2))  
+,(255, 0, 0),5)
 
 
 cv2.imshow('Diagonal Line', diagonal)
@@ -80,20 +77,13 @@ cv2.destroyAllWindows()
 #### Circle
 ```
 import cv2
-img = cv2.imread("image2.jpg")
-if img is None:
-    print("Image not found.")
-else:
-    
-    height, width, _ = img.shape
-    center = (width // 2, height // 2)
-    radius = 150
-    color = (255, 0, 0)  # Red in BGR format
-    thickness = 10
-    img_with_circle = cv2.circle(img, center, radius, color, thickness)
-    cv2.imshow('Image Window', img_with_circle)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+image = cv2.imread("image2.jpg")
+image = cv2.resize(image, (500, 500))
+
+res = cv2.circle(image,(250,250), 60, (0, 255, 0), 5)
+cv2.imshow('vinush', res)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 ```
 ![image](https://github.com/user-attachments/assets/1a1dc7a7-75b5-4660-9c17-6e46b2cf53c5)
@@ -103,7 +93,7 @@ else:
 import cv2
 image = cv2.imread("image2.jpg")
 
-# Convert to grayscale
+
 img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 img = cv2.imread("image2.jpg")
 img = cv2.resize(img, (900, 612))
@@ -115,7 +105,7 @@ thickness=20
 
 res_img=cv2.rectangle(img,start,stop,color,thickness)
 
-# Display the HSV image
+
 cv2.imshow('Image Window', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
