@@ -44,7 +44,7 @@ Split and merge HSV Image
 
 ### i, Read and display the image
 
-```
+```Python
 import cv2
 image=cv2.imread("image2.jpg")
 
@@ -59,7 +59,7 @@ cv2.destroyAllWindows()
 
 ### ii,Draw shapes and add text
 #### Line
-```
+```Python
 
 image=cv2.imread("image2.jpg")
 diagonal = cv2.line(image,  (0, 0),(int(width * 2), int(height * 2))  
@@ -75,7 +75,7 @@ cv2.destroyAllWindows()
 
 
 #### Circle
-```
+```Python
 import cv2
 image = cv2.imread("image2.jpg")
 image = cv2.resize(image, (500, 500))
@@ -89,7 +89,7 @@ cv2.destroyAllWindows()
 ![image](https://github.com/user-attachments/assets/1a1dc7a7-75b5-4660-9c17-6e46b2cf53c5)
 
 #### Rectangle
-```
+```Python
 import cv2
 image = cv2.imread("image2.jpg")
 
@@ -112,7 +112,7 @@ cv2.destroyAllWindows()
 ```
 ![image](https://github.com/user-attachments/assets/f2889187-ade3-48f5-b281-4c4c3af3d8ff)
 #### Add the text "OpenCV Drawing" at the top-left corner of the image.
-```
+```Python
 image = cv2.imread("image2.jpg")
 text = "OpenCV Drawing"
 position = (10, 50)
@@ -131,7 +131,7 @@ cv2.destroyAllWindows()
 ### iii) Image color conversion
 
 #### BGR and RGB to HSV and GRAY
-```
+```Python
 import cv2
 img = cv2.imread('image2.jpg',1)
 img = cv2.resize(img,(300,200))
@@ -151,7 +151,7 @@ cv2.destroyAllWindows()
 
 
 #### HSV to RGB and BGR
-```
+```Python
 import cv2
 img = cv2.imread('image2.jpg')
 img = cv2.resize(img,(300,200))
@@ -169,7 +169,7 @@ cv2.destroyAllWindows()
 
 
 #### RGB and BGR to YCrCb
-```
+```Python
 import cv2
 img = cv2.imread('image2.jpg')
 img = cv2.resize(img,(300,200))
@@ -188,7 +188,7 @@ cv2.destroyAllWindows()
 
 
 #### Split and merge RGB Image
-```
+```Python
 import cv2
 img = cv2.imread('image2.jpg',1)
 img = cv2.resize(img,(300,200))
@@ -207,7 +207,7 @@ cv2.destroyAllWindows()
 
 
 #### Split and merge HSV Image
-```
+```Python
 import cv2
 img = cv2.imread("image2.jpg",1)
 img = cv2.resize(img,(300,200))
@@ -225,13 +225,13 @@ cv2.destroyAllWindows()
 
 ### iv, Access and Manipulate Image Pixels
 #### (1) Access and print the value of the pixel at coordinates (100, 100)
-```
+```Python
 print(f"Pixel value at (100, 100): {pixel_value}")
 ```
 ![image](https://github.com/user-attachments/assets/59d133dc-68f9-4fe3-a3dd-f9c7c89f3ff8)
 
 #### (2) Modify the color of the pixel at (200, 200) to white
-```
+```Python
 import cv2
 image = cv2.imread('image2.jpg',1)
 image = cv2.resize(image,(400,300))
@@ -243,7 +243,7 @@ cv2.destroyAllWindows()
 ```
 ![image](https://github.com/user-attachments/assets/4254ed79-eabe-4d6f-b8ad-37e8acb60233)
 ### v, Image Resizing
-```
+```Python
 cv2.imshow('ORIGINAL IMAGE',image)
 resized_image = cv2.resize(image, (image.shape[1] // 2, image.shape[0] // 2))
 cv2.imshow('RESIZED IMAGE', resized_image)
@@ -253,7 +253,7 @@ cv2.destroyAllWindows()
 ![image](https://github.com/user-attachments/assets/1ac0d0f4-fc74-43c5-bdc7-951f858aaf6c)
 
 ### vi) Image Cropping
-```
+```Python
 import cv2
 image = cv2.imread('image2.jpg',1)
 image = cv2.resize(image,(400,300))
@@ -268,7 +268,7 @@ cv2.destroyAllWindows()
 
  ### vii) Image Flipping
  #### (1) Flip the original image horizontally and display it
-```
+```Python
 import cv2
 image = cv2.imread("image2.jpg")
 image = cv2.resize(image,(300,200))
@@ -282,7 +282,7 @@ cv2.destroyAllWindows()
 ![image](https://github.com/user-attachments/assets/b22503e4-3712-4de1-892d-6af8e9ffabda)
 
 #### (2) Flip the original image vertically and display it
-```
+```Python
 import cv2
 image = cv2.imread("image2.jpg")
 image = cv2.resize(image,(300,200))
@@ -295,7 +295,7 @@ cv2.destroyAllWindows()
 ![image](https://github.com/user-attachments/assets/afb4e35c-8679-40c0-8ce8-1ad0f753bc9c)
 
 ### viii)Write and Save the Modified Image
-```
+```Python
 import cv2
 img = cv2.imread("image2.jpg")
 img = cv2.resize(img,(300,200))
