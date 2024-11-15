@@ -227,7 +227,7 @@ cv2.destroyAllWindows()
 #### (1) Access and print the value of the pixel at coordinates (100, 100)
 ```Python
 import cv2
-image = cv2.imread("image3.jpg")
+image = cv2.imread("image2.jpg")
 pixel_value = image[100, 100]
 print(f"Pixel value at (100, 100): {pixel_value}")
 ```
