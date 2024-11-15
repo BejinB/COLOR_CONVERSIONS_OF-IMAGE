@@ -226,9 +226,13 @@ cv2.destroyAllWindows()
 ### iv, Access and Manipulate Image Pixels
 #### (1) Access and print the value of the pixel at coordinates (100, 100)
 ```Python
+import cv2
+image = cv2.imread("image3.jpg")
+pixel_value = image[100, 100]
 print(f"Pixel value at (100, 100): {pixel_value}")
 ```
-![image](https://github.com/user-attachments/assets/59d133dc-68f9-4fe3-a3dd-f9c7c89f3ff8)
+![image](https://github.com/user-attachments/assets/36c347e7-c10d-4b4b-86e0-12e73f7c7a1f)
+
 
 #### (2) Modify the color of the pixel at (200, 200) to white
 ```Python
